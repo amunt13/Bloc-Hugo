@@ -1,3 +1,31 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ca'
+title = 'Linux, BSD i altres herbes'
+defaultContentLanguage = "ca"
+theme = 'hugo-blog-awesome'
+
+[params.author]
+  avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "Linux, BSD i altres herbes."
+  name = "amunt25"
+  description = "Un espai per compartir experiències linuxeres."
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Inici"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Bloc"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre mi"
+    url = "/about/"
+    weight = 3
+
+[params]
+goToTop = true

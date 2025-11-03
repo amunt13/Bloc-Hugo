@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ca"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Instal·lar Hugo | Linux, BSD i altres herbes</title>
+<meta property="og:title" content="Instal·lar Hugo | Linux, BSD i altres herbes" />
+<meta name="twitter:title" content="Instal·lar Hugo | Linux, BSD i altres herbes" />
+<meta itemprop="name" content="Instal·lar Hugo | Linux, BSD i altres herbes" />
+<meta name="application-name" content="Instal·lar Hugo | Linux, BSD i altres herbes" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ca" />
+<meta name="language" content="ca" />
+
+  <link rel="alternate" hreflang="ca" href="//localhost:1313/posts/elmeuprimer/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-10-30T10:05:25&#43;0100 />
+    <meta property="article:published_time" content=2025-10-30T10:05:25&#43;0100 />
+    <meta property="og:url" content="//localhost:1313/posts/elmeuprimer/" />
+
+    
+    <meta property="og:article:author" content="amunt25" />
+    <meta property="article:author" content="amunt25" />
+    <meta name="author" content="amunt25" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Instal·lar Hugo",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-10-30",
+        "description": "",
+        "wordCount":  295 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-10-30",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Linux, BSD i altres herbes"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.131.0">
+
+    
+    <meta property="og:url" content="//localhost:1313/posts/elmeuprimer/">
+  <meta property="og:site_name" content="Linux, BSD i altres herbes">
+  <meta property="og:title" content="Instal·lar Hugo">
+  <meta property="og:description" content="He instal·lat Hugo amb el tema Awesome amb l’ajuda d’aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
+He d’assenyalar que el més rellevant ha estat que he fet cas a l’advertència del sistema en relació al nom de la “Branca”. Per defecte m’assignava “Master”, però em proposava “main”. Així ho he fet i ha funcionat.
+git config --global init.defaultBranch main
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.">
+  <meta property="og:locale" content="ca">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-30T10:05:25+01:00">
+    <meta property="article:modified_time" content="2025-10-30T10:05:25+01:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Instal·lar Hugo">
+  <meta name="twitter:description" content="He instal·lat Hugo amb el tema Awesome amb l’ajuda d’aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
+He d’assenyalar que el més rellevant ha estat que he fet cas a l’advertència del sistema en relació al nom de la “Branca”. Per defecte m’assignava “Master”, però em proposava “main”. Així ho he fet i ha funcionat.
+git config --global init.defaultBranch main
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.">
+
+
+    
+
+    <link rel="canonical" href="//localhost:1313/posts/elmeuprimer/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="//localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="//localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Inici
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Bloc
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        Sobre mi
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Instal·lar Hugo</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-10-30T10:05:25&#43;01:00" itemprop="datePublished"> 30 d’oct. 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>He instal·lat Hugo amb el tema Awesome amb l&rsquo;ajuda d&rsquo;aquesta web: <a href="https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/">https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/</a></p>
+<p>He d&rsquo;assenyalar que el més rellevant ha estat que he fet cas a l&rsquo;advertència del sistema en relació al nom de la &ldquo;Branca&rdquo;. Per defecte m&rsquo;assignava &ldquo;Master&rdquo;, però em proposava &ldquo;main&rdquo;. Així ho he fet i ha funcionat.</p>
+<p><code>git config --global init.defaultBranch main</code></p>
+<p>Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:</p>
+<blockquote>
+<p>L&rsquo;idioma:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ca&#39;</span>
+</span></span><span style="display:flex;"><span>defaultContentLanguage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ca&#34;</span>
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<p>I així el  menú:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>menu<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span> 
+</span></span><span style="display:flex;"><span> identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;home&#34;</span> 
+</span></span><span style="display:flex;"><span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Inici&#34;</span> 
+</span></span><span style="display:flex;"><span> url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span> weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>   identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blog&#34;</span>
+</span></span><span style="display:flex;"><span>   name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bloc&#34;</span>
+</span></span><span style="display:flex;"><span>   url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>  weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span> identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sobre mi&#34;</span>
+</span></span><span style="display:flex;"><span> url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span> weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div></blockquote>
+<h2 id="una-imatge-i-iinformació-del-bloc">Una imatge i iinformació del bloc.</h2>
+<p>Per personalitzar una mica el bloc, es pot afegirr un segment de text al fitxer <em>hugo.toml</em>:</p>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>params.author<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span> avatar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;avatar.jpg&#34;</span> <span style="color:#ae81ff">\#</span> put the file in assets folder; also ensure that image has same height and width
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">\#</span> Note: image is not rendered <span style="color:#66d9ef">if</span> the resource<span style="color:#f92672">(</span>avatar image<span style="color:#f92672">)</span> is not found. No error is displayed.
+</span></span><span style="display:flex;"><span> intro <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Linux, BSD i altres herbes.&#34;</span>
+</span></span><span style="display:flex;"><span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;amunt25&#34;</span>
+</span></span><span style="display:flex;"><span> description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Un espai per compartir experiències linuxeres.&#34;</span>
+</span></span></code></pre></div></blockquote>
+<h2 id="fletxa-per-anar-al-principi">Fletxa per anar al principi.</h2>
+<p>És útil posar un enllaç a baix del text per facilitar tornar a la part superior de la pàgina. Això és tan simple com afegir <code>goToTop = true</code> al fitxer hugo.toml.</p>
+<h2 id="el-contingut-de-sobre-mi">El contingut de &ldquo;Sobre mi&rdquo;.</h2>
+<p>Aquest contingut és un fitxer anomenat index.md, ubicat a lla carpeta &ldquo;about&rdquo; dins de &ldquo;content&rdquo;. Per crear-lo, crees primer la carpeta &ldquo;about&rdquo; manualment i després sols has de picar <code>hugo new content/about/index.md</code>, sempre des de dins de la carpeta principal del projecte.</p>
+<p>Després ja el pots editar.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2025 amunt25.
+        
+    </small>
+</footer><a href="#" title="" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="//localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

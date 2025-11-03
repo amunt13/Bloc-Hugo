@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux, BSD i altres herbes</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Linux, BSD i altres herbes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ca</language>
+    <lastBuildDate>Fri, 31 Oct 2025 09:44:51 +0100</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown</title>
+      <link>//localhost:1313/posts/markdown/</link>
+      <pubDate>Fri, 31 Oct 2025 09:44:51 +0100</pubDate>
+      
+      <guid>//localhost:1313/posts/markdown/</guid>
+      
+      <description>Aquí tens una breu introducció a Markdown que m&amp;rsquo;ha ajudat: Markdown, un camí cap a la productivitat
+Una annotació què consider rellevant, i molt profitosa, és el tema de la inserció de codi que prové de la terminal (bash en el meu cas). És el que s&amp;rsquo;anomena en l&amp;rsquo;argot &amp;ldquo;blockquote&amp;rdquo;
+Per a que ho codifiqui correctament, has de començar amb una línia com aquesta:
+&amp;gt; ```bash
+El fet de posar &amp;ldquo;bash&amp;rdquo; arrodoneix el resultat, incorporant-hi els colors del terminal.</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Thu, 30 Oct 2025 18:04:54 +0100</pubDate>
+      
+      <guid>//localhost:1313/about/</guid>
+      
+      <description>Usuari de Linux.
+Vaig començar amb aquest sistema operatiu a les acaballes del segle XX. Recorde el meu primer intent amb Debian woody, sense èxit. Al voltant del 2007-2008 vaig abandonar definitivament Windows per Ubuntu.
+Aviat vaig apostar per les llibreies gtk. És a dir, mai he estat molt amic de KDE. Primer Gnome2. Després Mate i Openbox. Des de l&amp;rsquo;any passat he tornat a Gnome Shell.
+Estic una mica cansat dels canvis continus a Linux.</description>
+      
+    </item>
+    
+    <item>
+      <title>Instal·lar Hugo</title>
+      <link>//localhost:1313/posts/elmeuprimer/</link>
+      <pubDate>Thu, 30 Oct 2025 10:05:25 +0100</pubDate>
+      
+      <guid>//localhost:1313/posts/elmeuprimer/</guid>
+      
+      <description>He instal·lat Hugo amb el tema Awesome amb l&amp;rsquo;ajuda d&amp;rsquo;aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
+He d&amp;rsquo;assenyalar que el més rellevant ha estat que he fet cas a l&amp;rsquo;advertència del sistema en relació al nom de la &amp;ldquo;Branca&amp;rdquo;. Per defecte m&amp;rsquo;assignava &amp;ldquo;Master&amp;rdquo;, però em proposava &amp;ldquo;main&amp;rdquo;. Així ho he fet i ha funcionat.
+git config --global init.defaultBranch main
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
