@@ -7,7 +7,7 @@ theme = 'hugo-blog-awesome'
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Linux, BSD i altres herbes."
-  name = "amunt25"
+  name = "amunt13"
   description = "Un espai per compartir experiències linuxeres."
 
 [menu]
