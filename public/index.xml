@@ -2,17 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux, BSD i altres herbes</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/Bloc-Hugo/</link>
     <description>Recent content on Linux, BSD i altres herbes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
-    <lastBuildDate>Tue, 04 Nov 2025 07:06:43 +0100</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Nov 2025 08:57:43 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desplegament de Hugo a Github.</title>
+      <link>http://localhost:1313/Bloc-Hugo/posts/desplegament/</link>
+      <pubDate>Wed, 05 Nov 2025 08:57:43 +0100</pubDate>
+      
+      <guid>http://localhost:1313/Bloc-Hugo/posts/desplegament/</guid>
+      
+      <description>S&amp;rsquo;han de seguir les instruccions d&amp;rsquo;aquest enllaç per a dur-ho a terme.
+Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i ho sincronitzes amb un &amp;ldquo;repositori&amp;rdquo; creat a Github. Es configuraaquest repositori de forma que publiqui el contingut a la web de Github. La publicació és estàtica, és a dir, no es modifica fins que no tornis a fer una sincronització. Aquesta nova publicació és (o pot ser) automàtica.</description>
+      
+    </item>
+    
     <item>
       <title>Swap</title>
-      <link>//localhost:1313/posts/swap/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/swap/</link>
       <pubDate>Tue, 04 Nov 2025 07:06:43 +0100</pubDate>
       
-      <guid>//localhost:1313/posts/swap/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/swap/</guid>
       
       <description>Això és una reflexió sobre la Swap surgida com a consequència de l&amp;rsquo;encriptació que vaig fer d&amp;rsquo;un ordinador portàtil.
 El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació és el d&amp;rsquo;haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada i, a més a més, mai té contingut sensible.</description>
@@ -21,10 +33,10 @@ El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació �
     
     <item>
       <title>Markdown</title>
-      <link>//localhost:1313/posts/markdown/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/markdown/</link>
       <pubDate>Fri, 31 Oct 2025 09:44:51 +0100</pubDate>
       
-      <guid>//localhost:1313/posts/markdown/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/markdown/</guid>
       
       <description>Aquí tens una breu introducció a Markdown que m&amp;rsquo;ha ajudat: Markdown, un camí cap a la productivitat
 Una annotació què consider rellevant, i molt profitosa, és el tema de la inserció de codi que prové de la terminal (bash en el meu cas). És el que s&amp;rsquo;anomena en l&amp;rsquo;argot &amp;ldquo;blockquote&amp;rdquo;
@@ -36,10 +48,10 @@ El fet de posar &amp;ldquo;bash&amp;rdquo; arrodoneix el resultat, incorporant-h
     
     <item>
       <title>About</title>
-      <link>//localhost:1313/about/</link>
+      <link>http://localhost:1313/Bloc-Hugo/about/</link>
       <pubDate>Thu, 30 Oct 2025 18:04:54 +0100</pubDate>
       
-      <guid>//localhost:1313/about/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/about/</guid>
       
       <description>Usuari de Linux.
 Vaig començar amb aquest sistema operatiu a les acaballes del segle XX. Recorde el meu primer intent amb Debian Woody, sense èxit. Al voltant del 2007-2008 vaig abandonar definitivament Windows per Ubuntu.
@@ -49,10 +61,10 @@ Aviat vaig apostar per les llibreies gtk. És a dir, mai he estat molt amic de K
     
     <item>
       <title>Instal·lar Hugo</title>
-      <link>//localhost:1313/posts/elmeuprimer/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</link>
       <pubDate>Thu, 30 Oct 2025 10:05:25 +0100</pubDate>
       
-      <guid>//localhost:1313/posts/elmeuprimer/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</guid>
       
       <description>He instal·lat Hugo amb el tema Awesome amb l&amp;rsquo;ajuda d&amp;rsquo;aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
 He d&amp;rsquo;assenyalar que el més rellevant ha estat que he fet cas a l&amp;rsquo;advertència del sistema en relació al nom de la &amp;ldquo;Branca&amp;rdquo;. Per defecte m&amp;rsquo;assignava &amp;ldquo;Master&amp;rdquo;, però em proposava &amp;ldquo;main&amp;rdquo;. Així ho he fet i ha funcionat.
