@@ -8,7 +8,7 @@ S'han de seguir  les instruccions [d'aquest enllaç](https://gohugo.io/host-and-
 
 Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i ho sincronitzes amb un "repositori" creat a Github. Es configuraaquest repositori de forma que publiqui el contingut a la web de Github. La publicació és estàtica, és a dir, no es modifica fins que no tornis a fer una sincronització. Aquesta nova publicació és (o pot ser) automàtica.
 
-L'esquema és simple. La construcció no ho es tant i es pot convertir en un camp de mines. Fem un breu esquema per assenyalar les dificultats mésrellevants que he hagut de resoldre.
+L'esquema és simple. La construcció no ho es tant i es pot convertir en un camp de mines. Fem un breu esquema per assenyalar les dificultats més rellevants que he hagut de resoldre.
 
 1. Instal·lar Hugo i crear el primer projecte en local. (sols crear-lo. No cal afegir contingut ni cap tema o plantilla).
 
