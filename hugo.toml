@@ -3,6 +3,9 @@ title = 'Linux, BSD i altres herbes'
 defaultContentLanguage = "ca"
 theme = 'hugo-blog-awesome'
 
+baseURL = "https://amunt13.github.io/Bloc-Hugo/"
+canonifyURLs = false   
+
 [params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
