@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Linux, BSD i altres herbes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
-    <lastBuildDate>Wed, 05 Nov 2025 08:57:43 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Nov 2025 16:57:03 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El meu Homelab</title>
+      <link>http://localhost:1313/Bloc-Hugo/posts/homelab/</link>
+      <pubDate>Wed, 05 Nov 2025 16:57:03 +0100</pubDate>
+      
+      <guid>http://localhost:1313/Bloc-Hugo/posts/homelab/</guid>
+      
+      <description>Tenc un servidor domèstic. Vaig començar amb aquest tema amb un aparell molt bàsic construit a partir d&amp;rsquo;un NSLU2 de Linksys. Un dispositiu dissenyat per enllaçar discos durs a la xarxa sense necessitat de cap servidor dedicat. Molt ben documentat i feia la seva feina. Com diuen, fins hi tot una cafetera suporta Debian. Així que hi vaig crear un petit servidor. Era molt lleuger i la transferencia de fitxers era lenta .</description>
+      
+    </item>
+    
     <item>
       <title>Desplegament de Hugo a Github.</title>
       <link>http://localhost:1313/Bloc-Hugo/posts/desplegament/</link>
@@ -15,7 +26,7 @@
       <guid>http://localhost:1313/Bloc-Hugo/posts/desplegament/</guid>
       
       <description>S&amp;rsquo;han de seguir les instruccions d&amp;rsquo;aquest enllaç per a dur-ho a terme.
-Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i ho sincronitzes amb un &amp;ldquo;repositori&amp;rdquo; creat a Github. Es configuraaquest repositori de forma que publiqui el contingut a la web de Github. La publicació és estàtica, és a dir, no es modifica fins que no tornis a fer una sincronització. Aquesta nova publicació és (o pot ser) automàtica.</description>
+Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i ho sincronitzes amb un &amp;ldquo;repositori&amp;rdquo; creat a Github. Es configura aquest repositori de forma que publiqui el contingut a la web de Github. La publicació és estàtica, és a dir, no es modifica fins que no tornis a fer una sincronització. Aquesta nova publicació és (o pot ser) automàtica.</description>
       
     </item>
     
@@ -54,9 +65,10 @@ El fet de posar &amp;ldquo;bash&amp;rdquo; arrodoneix el resultat, incorporant-h
       <guid>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</guid>
       
       <description>He instal·lat Hugo amb el tema Awesome amb l&amp;rsquo;ajuda d&amp;rsquo;aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
-He d&amp;rsquo;assenyalar que el més rellevant ha estat que he fet cas a l&amp;rsquo;advertència del sistema en relació al nom de la &amp;ldquo;Branca&amp;rdquo;. Per defecte m&amp;rsquo;assignava &amp;ldquo;Master&amp;rdquo;, però em proposava &amp;ldquo;main&amp;rdquo;. Així ho he fet i ha funcionat.
-git config --global init.defaultBranch main
-Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.</description>
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:
+L&amp;rsquo;idioma:
+languageCode = &amp;#39;ca&amp;#39; defaultContentLanguage = &amp;#34;ca&amp;#34; I així el menú:
+[menu] [[menu.main]] identifier = &amp;#34;home&amp;#34; name = &amp;#34;Inici&amp;#34; url = &amp;#34;/&amp;#34; weight = 1 [[menu.main]] identifier = &amp;#34;blog&amp;#34; name = &amp;#34;Bloc&amp;#34; url = &amp;#34;/posts/&amp;#34; weight = 2 [[menu.</description>
       
     </item>
     

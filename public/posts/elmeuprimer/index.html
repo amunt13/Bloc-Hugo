@@ -53,7 +53,7 @@
         },
         "datePublished": "2025-10-30",
         "description": "",
-        "wordCount":  295 ,
+        "wordCount":  528 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-10-30",
         "image": {
@@ -75,9 +75,10 @@
   <meta property="og:site_name" content="Linux, BSD i altres herbes">
   <meta property="og:title" content="Instal·lar Hugo">
   <meta property="og:description" content="He instal·lat Hugo amb el tema Awesome amb l’ajuda d’aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
-He d’assenyalar que el més rellevant ha estat que he fet cas a l’advertència del sistema en relació al nom de la “Branca”. Per defecte m’assignava “Master”, però em proposava “main”. Així ho he fet i ha funcionat.
-git config --global init.defaultBranch main
-Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.">
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:
+L’idioma:
+languageCode = &#39;ca&#39; defaultContentLanguage = &#34;ca&#34; I així el menú:
+[menu] [[menu.main]] identifier = &#34;home&#34; name = &#34;Inici&#34; url = &#34;/&#34; weight = 1 [[menu.main]] identifier = &#34;blog&#34; name = &#34;Bloc&#34; url = &#34;/posts/&#34; weight = 2 [[menu.">
   <meta property="og:locale" content="ca">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -90,9 +91,10 @@ Per configurar-ho en català (com a únic idioma) i, a més, configurar una barr
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Instal·lar Hugo">
   <meta name="twitter:description" content="He instal·lat Hugo amb el tema Awesome amb l’ajuda d’aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
-He d’assenyalar que el més rellevant ha estat que he fet cas a l’advertència del sistema en relació al nom de la “Branca”. Per defecte m’assignava “Master”, però em proposava “main”. Així ho he fet i ha funcionat.
-git config --global init.defaultBranch main
-Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.">
+Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:
+L’idioma:
+languageCode = &#39;ca&#39; defaultContentLanguage = &#34;ca&#34; I així el menú:
+[menu] [[menu.main]] identifier = &#34;home&#34; name = &#34;Inici&#34; url = &#34;/&#34; weight = 1 [[menu.main]] identifier = &#34;blog&#34; name = &#34;Bloc&#34; url = &#34;/posts/&#34; weight = 2 [[menu.">
 
 
     
@@ -201,10 +203,24 @@ stroke-linejoin="round" class="feather feather-home">
                 
             </header>
             
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Índex de continguts</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#una-imatge-i-iinformació-del-bloc">Una imatge i iinformació del bloc.</a></li>
+    <li><a href="#fletxa-per-anar-al-principi">Fletxa per anar al principi.</a></li>
+    <li><a href="#el-contingut-de-sobre-mi">El contingut de &ldquo;Sobre mi&rdquo;.</a></li>
+    <li><a href="#líndex-de-continguts">L&rsquo;índex de continguts.</a>
+      <ul>
+        <li><a href="#text-a-líndex-de-continguts">Text a l&rsquo;índex de continguts.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
             <div class="page-content">
                 <p>He instal·lat Hugo amb el tema Awesome amb l&rsquo;ajuda d&rsquo;aquesta web: <a href="https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/">https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/</a></p>
-<p>He d&rsquo;assenyalar que el més rellevant ha estat que he fet cas a l&rsquo;advertència del sistema en relació al nom de la &ldquo;Branca&rdquo;. Per defecte m&rsquo;assignava &ldquo;Master&rdquo;, però em proposava &ldquo;main&rdquo;. Així ho he fet i ha funcionat.</p>
-<p><code>git config --global init.defaultBranch main</code></p>
 <p>Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:</p>
 <blockquote>
 <p>L&rsquo;idioma:</p>
@@ -244,7 +260,31 @@ stroke-linejoin="round" class="feather feather-home">
 <p>És útil posar un enllaç a baix del text per facilitar tornar a la part superior de la pàgina. Això és tan simple com afegir <code>goToTop = true</code> al fitxer hugo.toml.</p>
 <h2 id="el-contingut-de-sobre-mi">El contingut de &ldquo;Sobre mi&rdquo;.</h2>
 <p>Aquest contingut és un fitxer anomenat index.md, ubicat a lla carpeta &ldquo;about&rdquo; dins de &ldquo;content&rdquo;. Per crear-lo, crees primer la carpeta &ldquo;about&rdquo; manualment i després sols has de picar <code>hugo new content/about/index.md</code>, sempre des de dins de la carpeta principal del projecte.</p>
-<p>Després ja el pots editar.</p>
+<h2 id="líndex-de-continguts">L&rsquo;índex de continguts.</h2>
+<p>El tema Awesome ja du incorporada la creació automàtica de l&rsquo;index a cada post. El que passa és que no està activada per defecte.</p>
+<p>Es pot activar de forma global al fitxer <code>hugo.toml</code>, afegint el següent:</p>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>params<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>toc <span style="color:#f92672">=</span> true   
+</span></span></code></pre></div></blockquote>
+<p>També es pot activar/desactivar a cada post, posant al &ldquo;front matter&rdquo; el text <code>toc = true</code> o <code>toc = false</code>. Quedaria alguna cosa així:</p>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>title: <span style="color:#e6db74">&#34;Your Post Title&#34;</span>
+</span></span><span style="display:flex;"><span>date: 2023-05-02
+</span></span><span style="display:flex;"><span>toc: true
+</span></span><span style="display:flex;"><span>+++   
+</span></span></code></pre></div></blockquote>
+<p>Com és fàcil que hi hagi posts sense títols, el que jo faig és posar una política global a <code>hugo.toml</code> i després en els posts que no sigui necessari l&rsquo;índex, sols a aquests, hi pos <code>toc = false</code>. Així evito que aparegui un enllaç d&rsquo;índex buit de continguts.</p>
+<p>L&rsquo;índex apareix tancat per defecte. Per canviar aquesta opció a &ldquo;obert&rdquo;, ho pots fer igual que abans, de forma global o per post. El text a col·locar a <code>hugo.toml</code>i/o a cada post és: <code>tocOpen = true</code>o <code>tocOpen = false</code>.</p>
+<p>Això crea autoáticament els índex de cada post. Però no apareix cap text a sobre de l&rsquo;enllaç. Per solucionar-ho, fes el següent:</p>
+<h3 id="text-a-líndex-de-continguts">Text a l&rsquo;índex de continguts.</h3>
+<p>La configuració dels índex es realitza al fitxer <code>themes/hugo-awesome-blog/layouts/partials/toc.html</code>que &ldquo;crida&rdquo; als fitxers d&rsquo;idioma per trobar el text.  Això es fa al fitxer corresponent al teu idioma. Aquests fitxers són a la carpeta <code>i18n</code>de l&rsquo;arrel del projecte. Has de crear un fitxer de nom <code>ca.toml</code>, on <code>ca</code>és l&rsquo;indicatiu d&rsquo;idioma. Hi has de posar el teu. El contingut del fitxer ha de ser:</p>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>single.table_of_contents<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>other <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Table of Contents&#34;</span>  <span style="color:#75715e"># Change this to &#34;Index&#34; or your preferred text   </span>
+</span></span></code></pre></div></blockquote>
+<p>Has de substituir &ldquo;Table of contents&rdquo; per la paraula o frase que consideris adient.</p>
 
             </div>
         </article></main>

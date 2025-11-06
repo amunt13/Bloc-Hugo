@@ -32,3 +32,4 @@ canonifyURLs = false
 
 [params]
 goToTop = true
+toc = true

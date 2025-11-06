@@ -2,6 +2,7 @@
 title = 'Markdown'
 date = 2025-10-31T09:44:51+01:00
 draft = false
+toc = false
 +++
 Aquí tens una breu introducció a Markdown que m'ha ajudat: [Markdown, un camí cap a la productivitat](https://atareao.es/como/markdown-o-camino-hacia-la-productividad/) 
 
