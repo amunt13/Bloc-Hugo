@@ -10,7 +10,7 @@ Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i
 
 L'esquema és simple. La construcció no ho és tant i es pot convertir en un camp de mines. Fem un breu resum  per assenyalar les dificultats més rellevants que he hagut de resoldre.
 
-1. Instal·lar Hugo i crear el primer projecte en local. (sols crear-lo. No cal afegir contingut). Afegir el tema és convenient.
+1. Instal·lar Hugo i crear el primer projecte en local. (sols crear-lo. No cal afegir contingut). Afegir el tema és convenient, ja que no tenir-lo instal·lat crec que va ser la causa de l'error d'absència del fitxer `.gitmodules`. 
 
 2. Crear el compte i el repositori a Github.
 

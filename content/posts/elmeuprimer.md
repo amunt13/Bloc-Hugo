@@ -32,7 +32,7 @@ Per configurar-ho en català (com a únic idioma) i, a més, configurar una barr
 >  weight = 3
 
 
-## Una imatge i iinformació del bloc.
+## Una imatge i informació del bloc.
 
 Per personalitzar una mica el bloc, es pot afegirr un segment de text al fitxer *hugo.toml*:
 
@@ -48,6 +48,7 @@ Per personalitzar una mica el bloc, es pot afegirr un segment de text al fitxer 
 ## Fletxa per anar al principi.
 
 És útil posar un enllaç a baix del text per facilitar tornar a la part superior de la pàgina. Això és tan simple com afegir `goToTop = true` al fitxer hugo.toml.
+
 
 ## El contingut de "Sobre mi".
 

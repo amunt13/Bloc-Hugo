@@ -6,7 +6,18 @@
     <description>Recent content on Linux, BSD i altres herbes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
-    <lastBuildDate>Wed, 05 Nov 2025 16:57:03 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Nov 2025 06:08:21 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuració bàsica de Neovim per a Markdown.</title>
+      <link>http://localhost:1313/Bloc-Hugo/posts/nvimbasicmd/</link>
+      <pubDate>Mon, 10 Nov 2025 06:08:21 +0100</pubDate>
+      
+      <guid>http://localhost:1313/Bloc-Hugo/posts/nvimbasicmd/</guid>
+      
+      <description>Fa uns anys vaig tenir contacte amb Làtex amb l&amp;rsquo;objecte de fer un document de certa envergadura. Va ser un procés d&amp;rsquo;aprenentatge important i els resultats van ser molt bons. Però, sigui per la falta de necessitat de repetir l&amp;rsquo;experiència, sigui per l&amp;rsquo;especial dificultat de Làtex, ja no ho he repetit. Sospito que el major problema és la dificultat d&amp;rsquo;ús de Làtex i a més a més, la falta de netedat del text font que generes.</description>
+      
+    </item>
+    
     <item>
       <title>El meu Homelab</title>
       <link>http://localhost:1313/Bloc-Hugo/posts/homelab/</link>
