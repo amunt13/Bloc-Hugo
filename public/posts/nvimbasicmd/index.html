@@ -53,7 +53,7 @@
         },
         "datePublished": "2025-11-10",
         "description": "",
-        "wordCount":  742 ,
+        "wordCount":  749 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-11-10",
         "image": {
@@ -203,7 +203,7 @@ stroke-linejoin="round" class="feather feather-home">
     <li><a href="#per-què-neovim">Per què Neovim.</a></li>
     <li><a href="#els-primers-passos-amb-neovim">Els primers passos amb Neovim.</a></li>
     <li><a href="#la-primera-configuració">La primera configuració.</a></li>
-    <li><a href="#un-exemple-de-la-potència-de-nvim">Un exemple de la potència de nvim.</a>
+    <li><a href="#un-exemple-de-la-potència-de-nvim-insertar-un-caràcter-a-linici-de-varies-línies">Un exemple de la potència de nvim. Insertar un caràcter a l&rsquo;inici de varies línies.</a>
       <ul>
         <li><a href="#usar-el-mode-visual-en-bloc-recomanat-per-a-seleccions-específiques">Usar el &ldquo;mode visual en bloc (recomanat per a seleccions específiques).</a></li>
         <li><a href="#métode-global-ideal-per-tot-el-text-o-rangs">Métode global. (Ideal per tot el text o rangs).</a></li>
@@ -252,10 +252,10 @@ stroke-linejoin="round" class="feather feather-home">
 </span></span><span style="display:flex;"><span> end
 </span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
 </span></span></code></pre></div></blockquote>
-<h2 id="un-exemple-de-la-potència-de-nvim">Un exemple de la potència de nvim.</h2>
+<h2 id="un-exemple-de-la-potència-de-nvim-insertar-un-caràcter-a-linici-de-varies-línies">Un exemple de la potència de nvim. Insertar un caràcter a l&rsquo;inici de varies línies.</h2>
 <p>Vaig aprofitant per anar anotant els meus avenços en vim. Com està veient, estic incorporant al text moltes entrades de codi, com a exemples de configuració. Això exigeix crear els anomenats &ldquo;blockquote&rdquo; on cada línia ha de començar pel símbol &gt;. Aquí és on destaca la potència de vim, ja que aquest procés es pot automatitzar. Hi ha varies maneres de fer-ho:</p>
 <h3 id="usar-el-mode-visual-en-bloc-recomanat-per-a-seleccions-específiques">Usar el &ldquo;mode visual en bloc (recomanat per a seleccions específiques).</h3>
-<ul>
+<ol>
 <li>Prem <code>Esc</code> per assegurar-te estar en mode normal.</li>
 <li>Mou el cursor a la primera línia on vulguis inserir el caràcter.</li>
 <li>Pressiona <code>ctrl+v</code> per entrar en mode &ldquo;visual bloc&rdquo;.</li>
@@ -263,7 +263,7 @@ stroke-linejoin="round" class="feather feather-home">
 <li>Pressiona <code>I</code> (i majúscula) per entrar en mode inserció a l&rsquo;inici de les línies seleccionades.</li>
 <li>Escriu el caràcter que vulguis inserir (per exemple &gt;).</li>
 <li>Pressiona <code>Esc</code>i el caràcter s&rsquo;insertarà a totes les línies seleccionades.</li>
-</ul>
+</ol>
 <h3 id="métode-global-ideal-per-tot-el-text-o-rangs">Métode global. (Ideal per tot el text o rangs).</h3>
 <p>Utilitza el comandament <code>:s</code>(substituir) amb un rang.</p>
 <h4 id="inserir--a-linici-de-totes-les-línies-de-larxiu">Inserir &gt; a l&rsquo;inici de totes les línies de l&rsquo;arxiu:</h4>
@@ -274,7 +274,6 @@ stroke-linejoin="round" class="feather feather-home">
 <blockquote>
 <p>:5,10s/^/&gt;/</p>
 </blockquote>
-<p>On,</p>
 <ul>
 <li>% = tot l&rsquo;arxiu.</li>
 <li>^ = inici de lìnia.</li>

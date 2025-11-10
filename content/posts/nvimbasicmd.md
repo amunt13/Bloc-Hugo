@@ -54,19 +54,19 @@ La configuració de nvim es realitza al fitxer `~/.config/nvim/init.lua`. I és 
 >  end
 > })
 
-## Un exemple de la potència de nvim.
+## Un exemple de la potència de nvim. Insertar un caràcter a l'inici de varies línies.
 
 Vaig aprofitant per anar anotant els meus avenços en vim. Com està veient, estic incorporant al text moltes entrades de codi, com a exemples de configuració. Això exigeix crear els anomenats "blockquote" on cada línia ha de començar pel símbol \>. Aquí és on destaca la potència de vim, ja que aquest procés es pot automatitzar. Hi ha varies maneres de fer-ho:
 
 ### Usar el "mode visual en bloc (recomanat per a seleccions específiques).
 
-+ Prem `Esc` per assegurar-te estar en mode normal.
-+ Mou el cursor a la primera línia on vulguis inserir el caràcter.
-+ Pressiona `ctrl+v` per entrar en mode "visual bloc".
-+ Selecciona la resta de línies verticalment usant `j` o les fletxes.
-+ Pressiona `I` (i majúscula) per entrar en mode inserció a l'inici de les línies seleccionades.
-+ Escriu el caràcter que vulguis inserir (per exemple \>).
-+ Pressiona `Esc`i el caràcter s'insertarà a totes les línies seleccionades.
+1. Prem `Esc` per assegurar-te estar en mode normal.
+2. Mou el cursor a la primera línia on vulguis inserir el caràcter.
+3. Pressiona `ctrl+v` per entrar en mode "visual bloc".
+4. Selecciona la resta de línies verticalment usant `j` o les fletxes.
+5. Pressiona `I` (i majúscula) per entrar en mode inserció a l'inici de les línies seleccionades.
+6. Escriu el caràcter que vulguis inserir (per exemple \>).
+7. Pressiona `Esc`i el caràcter s'insertarà a totes les línies seleccionades.
 
 ### Métode global. (Ideal per tot el text o rangs).
 
@@ -80,14 +80,11 @@ Utilitza el comandament `:s`(substituir) amb un rang.
 
 > :5,10s/^/>/   
 
-On,
-
 + \% = tot l'arxiu.
 + \^ = inici de lìnia.
 + \> = caràcter a inserir.
 
 ### Usar :norm en combinació amb comandaments.
-
 
 > `:%norm I>`
 
