@@ -6,13 +6,25 @@
     <description>Recent content in Posts on Linux, BSD i altres herbes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
-    <lastBuildDate>Mon, 10 Nov 2025 06:08:21 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Nov 2025 09:29:28 +0100</lastBuildDate><atom:link href="http://localhost:1313/Bloc-Hugo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>USB multi arrencada amb Ventoy.</title>
+      <link>http://localhost:1313/Bloc-Hugo/posts/07.ventoy/</link>
+      <pubDate>Thu, 13 Nov 2025 09:29:28 +0100</pubDate>
+      
+      <guid>http://localhost:1313/Bloc-Hugo/posts/07.ventoy/</guid>
+      
+      <description>Si estàs cansat de formatar repetidament un USB per tal de disposar d&amp;rsquo;una nova unitat d&amp;rsquo;arrencada, té solució. Pots crear un USB multi arrencada, amb diferents sistemes operatius amb Ventoy. La còpia de les ISO es fa a través del navegador de fitxers i és molt ràpida ja que no cal formatar l&amp;rsquo;USB a cada còpia. Visita la web de Ventoy per a cercar tot el suport que necessitis.
+Si disposes d&amp;rsquo;un USB d&amp;rsquo;almenys 16 Gb (per aprofitar la multi arrencada) ho pots fer de forma simple seguint aquests passos:</description>
+      
+    </item>
+    
     <item>
       <title>Configuració bàsica de Neovim per a Markdown.</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/nvimbasicmd/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/06.nvim/</link>
       <pubDate>Mon, 10 Nov 2025 06:08:21 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/nvimbasicmd/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/06.nvim/</guid>
       
       <description>Fa uns anys vaig tenir contacte amb Làtex amb l&amp;rsquo;objecte de fer un document de certa envergadura. Va ser un procés d&amp;rsquo;aprenentatge important i els resultats van ser molt bons. Però, sigui per la falta de necessitat de repetir l&amp;rsquo;experiència, sigui per l&amp;rsquo;especial dificultat de Làtex, ja no ho he repetit. Sospito que el major problema és la dificultat d&amp;rsquo;ús de Làtex i a més a més, la falta de netedat del text font que generes.</description>
       
@@ -20,10 +32,10 @@
     
     <item>
       <title>El meu Homelab</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/homelab/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/04.homelab/</link>
       <pubDate>Wed, 05 Nov 2025 16:57:03 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/homelab/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/04.homelab/</guid>
       
       <description>Tenc un servidor domèstic. Vaig començar amb aquest tema amb un aparell molt bàsic construit a partir d&amp;rsquo;un NSLU2 de Linksys. Un dispositiu dissenyat per enllaçar discos durs a la xarxa sense necessitat de cap servidor dedicat. Molt ben documentat i feia la seva feina. Com diuen, fins hi tot una cafetera suporta Debian. Així que hi vaig crear un petit servidor. Era molt lleuger i la transferencia de fitxers era lenta .</description>
       
@@ -31,10 +43,10 @@
     
     <item>
       <title>Desplegament de Hugo a Github.</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/desplegament/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/05.desplegament/</link>
       <pubDate>Wed, 05 Nov 2025 08:57:43 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/desplegament/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/05.desplegament/</guid>
       
       <description>S&amp;rsquo;han de seguir les instruccions d&amp;rsquo;aquest enllaç per a dur-ho a terme.
 Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i ho sincronitzes amb un &amp;ldquo;repositori&amp;rdquo; creat a Github. Es configura aquest repositori de forma que publiqui el contingut a la web de Github. La publicació és estàtica, és a dir, no es modifica fins que no tornis a fer una sincronització. Aquesta nova publicació és (o pot ser) automàtica.</description>
@@ -43,10 +55,10 @@ Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i
     
     <item>
       <title>Swap</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/swap/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/03.swap/</link>
       <pubDate>Tue, 04 Nov 2025 07:06:43 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/swap/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/03.swap/</guid>
       
       <description>Això és una reflexió sobre la Swap surgida com a consequència de l&amp;rsquo;encriptació que vaig fer d&amp;rsquo;un ordinador portàtil.
 El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació és el d&amp;rsquo;haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada i, a més a més, mai té contingut sensible.</description>
@@ -55,10 +67,10 @@ El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació �
     
     <item>
       <title>Markdown</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/markdown/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/02.markdown/</link>
       <pubDate>Fri, 31 Oct 2025 09:44:51 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/markdown/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/02.markdown/</guid>
       
       <description>Aquí tens una breu introducció a Markdown que m&amp;rsquo;ha ajudat: Markdown, un camí cap a la productivitat
 Una annotació què consider rellevant, i molt profitosa, és el tema de la inserció de codi que prové de la terminal (bash en el meu cas). És el que s&amp;rsquo;anomena en l&amp;rsquo;argot &amp;ldquo;blockquote&amp;rdquo;
@@ -70,10 +82,10 @@ El fet de posar &amp;ldquo;bash&amp;rdquo; arrodoneix el resultat, incorporant-h
     
     <item>
       <title>Instal·lar Hugo</title>
-      <link>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</link>
+      <link>http://localhost:1313/Bloc-Hugo/posts/01.hugoinstall/</link>
       <pubDate>Thu, 30 Oct 2025 10:05:25 +0100</pubDate>
       
-      <guid>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</guid>
+      <guid>http://localhost:1313/Bloc-Hugo/posts/01.hugoinstall/</guid>
       
       <description>He instal·lat Hugo amb el tema Awesome amb l&amp;rsquo;ajuda d&amp;rsquo;aquesta web: https://rodosilva.github.io/myblog/posts/blog-con-hugo-y-githubpages/
 Per configurar-ho en català (com a únic idioma) i, a més, configurar una barra de menú bàsica, he posat aquestes línies a hugo.toml:

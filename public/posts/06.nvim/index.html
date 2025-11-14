@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ca"><head><script src="/Bloc-Hugo/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Bloc-Hugo/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Configuració bàsica de Neovim per a Markdown. | Linux, BSD i altres herbes</title>
+<meta property="og:title" content="Configuració bàsica de Neovim per a Markdown. | Linux, BSD i altres herbes" />
+<meta name="twitter:title" content="Configuració bàsica de Neovim per a Markdown. | Linux, BSD i altres herbes" />
+<meta itemprop="name" content="Configuració bàsica de Neovim per a Markdown. | Linux, BSD i altres herbes" />
+<meta name="application-name" content="Configuració bàsica de Neovim per a Markdown. | Linux, BSD i altres herbes" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ca" />
+<meta name="language" content="ca" />
+
+  <link rel="alternate" hreflang="ca" href="http://localhost:1313/Bloc-Hugo/posts/06.nvim/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-11-10T06:08:21&#43;0100 />
+    <meta property="article:published_time" content=2025-11-10T06:08:21&#43;0100 />
+    <meta property="og:url" content="http://localhost:1313/Bloc-Hugo/posts/06.nvim/" />
+
+    
+    <meta property="og:article:author" content="amunt13" />
+    <meta property="article:author" content="amunt13" />
+    <meta name="author" content="amunt13" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Configuració bàsica de Neovim per a Markdown.",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-11-10",
+        "description": "",
+        "wordCount":  746 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-11-10",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Linux, BSD i altres herbes"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.131.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/Bloc-Hugo/posts/06.nvim/">
+  <meta property="og:site_name" content="Linux, BSD i altres herbes">
+  <meta property="og:title" content="Configuració bàsica de Neovim per a Markdown.">
+  <meta property="og:description" content="Fa uns anys vaig tenir contacte amb Làtex amb l’objecte de fer un document de certa envergadura. Va ser un procés d’aprenentatge important i els resultats van ser molt bons. Però, sigui per la falta de necessitat de repetir l’experiència, sigui per l’especial dificultat de Làtex, ja no ho he repetit. Sospito que el major problema és la dificultat d’ús de Làtex i a més a més, la falta de netedat del text font que generes.">
+  <meta property="og:locale" content="ca">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-10T06:08:21+01:00">
+    <meta property="article:modified_time" content="2025-11-10T06:08:21+01:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Configuració bàsica de Neovim per a Markdown.">
+  <meta name="twitter:description" content="Fa uns anys vaig tenir contacte amb Làtex amb l’objecte de fer un document de certa envergadura. Va ser un procés d’aprenentatge important i els resultats van ser molt bons. Però, sigui per la falta de necessitat de repetir l’experiència, sigui per l’especial dificultat de Làtex, ja no ho he repetit. Sospito que el major problema és la dificultat d’ús de Làtex i a més a més, la falta de netedat del text font que generes.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/Bloc-Hugo/posts/06.nvim/">
+    <link href="/Bloc-Hugo/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/Bloc-Hugo/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/Bloc-Hugo/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Bloc-Hugo/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Bloc-Hugo/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/Bloc-Hugo/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/Bloc-Hugo/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/Bloc-Hugo/site.webmanifest">
+
+<meta name="msapplication-config" content="/Bloc-Hugo/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/Bloc-Hugo/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/Bloc-Hugo/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/Bloc-Hugo/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/Bloc-Hugo/">
+                        Inici
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/Bloc-Hugo/posts/">
+                        Bloc
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/Bloc-Hugo/about/">
+                        Sobre mi
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Configuració bàsica de Neovim per a Markdown.</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-11-10T06:08:21&#43;01:00" itemprop="datePublished"> 10 de nov. 2025 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Índex de continguts</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#per-què-neovim">Per què Neovim.</a></li>
+    <li><a href="#els-primers-passos-amb-neovim">Els primers passos amb Neovim.</a></li>
+    <li><a href="#la-primera-configuració">La primera configuració.</a></li>
+    <li><a href="#un-exemple-de-la-potència-de-nvim-insertar-un-caràcter-a-linici-de-varies-línies">Un exemple de la potència de nvim. Insertar un caràcter a l&rsquo;inici de varies línies.</a>
+      <ul>
+        <li><a href="#usar-el-mode-visual-en-bloc-recomanat-per-a-seleccions-específiques">Usar el &ldquo;mode visual en bloc (recomanat per a seleccions específiques).</a></li>
+        <li><a href="#métode-global-ideal-per-tot-el-text-o-rangs">Métode global. (Ideal per tot el text o rangs).</a></li>
+        <li><a href="#usar-norm-en-combinació-amb-comandaments">Usar :norm en combinació amb comandaments.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <p>Fa uns anys vaig tenir contacte amb Làtex amb l&rsquo;objecte de fer un document de certa envergadura. Va ser un procés d&rsquo;aprenentatge important i els resultats van ser molt bons. Però, sigui per la falta de necessitat de repetir l&rsquo;experiència, sigui per l&rsquo;especial dificultat de Làtex, ja no ho he repetit. Sospito que el major problema és la dificultat d&rsquo;ús de Làtex i a més a més, la falta de netedat del text font que generes.</p>
+<p>Per aquest motiu, ara estic investigant les possibilitats de markdown. Vull veure fins a quin punt aquest sistema de marcat de text plà, pot ajudar a la redacció de textos raonablement complexos. I com es pot manipular aquest text font per a generar documents d&rsquo;un nivell correcte. Sense necessitat d&rsquo;un ús intensiu de Làtex i evitant els textos complexos que genera i no són fàcils de llegir ni corregir.</p>
+<h2 id="per-què-neovim">Per què Neovim.</h2>
+<p>Si del que es tracta és d&rsquo;escriure amb text pià, doncs necessites un editor de text. Si aquest editor ha de sustentar una feina important, ha de tenir característiques potents per ajudar-te, poc a poc, a millorar la teva eficiència. I si ja  hi estàs enfangat, també necessites que aporti totes les avantatges que puguis, de comoditat i d&rsquo;extensió.</p>
+<p>La meva aproximació als editors potents va ser a través de vim. Per això ara estic amb Neovim. La xarxa n&rsquo;està plena de documentació i comentaris al respecte. Ben fonamentats i molt tècnics. No cal insistir en el tema.</p>
+<h2 id="els-primers-passos-amb-neovim">Els primers passos amb Neovim.</h2>
+<p>Si ets usuari de vim, començçar amb Neovim és inmediat. En el meu cas, usuari de Debian, tan simple com fer <code>sudo apt install neovim</code>.</p>
+<p>El programa s&rsquo;inicia amb l&rsquo;ordre <code>nvim</code>. Això et condueix a una pantalla semblant a la de vim, en tots els sentits.</p>
+<p>L&rsquo;ús bàsic de Neovim és idèntic al de vim. Però clar, ja que hi som, cal fer millores en el seu comportament per aprofitar les seves funcionalitats.</p>
+<p>Doncs això no és simple. No ho és perquè hi ha un món de possibilitats que no sempre són adients a les teves necessitats. I la configuració és totalment nova per a mí. Per tant l&rsquo;objectiu inicial és el de cercar la simplicitat. Així que els primers objectius de configuració serà sols el referent al &ldquo;resaltat de text&rdquo; i a la correcció ortogràfica.</p>
+<h2 id="la-primera-configuració">La primera configuració.</h2>
+<p>La configuració de nvim es realitza al fitxer <code>~/.config/nvim/init.lua</code>. I és segur que una vegada instal·lat nvim, no existeix. L&rsquo;has de crear manualment i després editar-lo. La meva configuració és la següent:</p>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>require<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;lazy&#34;</span><span style="color:#f92672">)</span>.setup<span style="color:#f92672">({</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;nvim-treesitter/nvim-treesitter&#34;</span>,
+</span></span><span style="display:flex;"><span>   build <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;:TSUpdate&#34;</span>,
+</span></span><span style="display:flex;"><span>   config <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>     require<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;nvim-treesitter.configs&#34;</span><span style="color:#f92672">)</span>.setup<span style="color:#f92672">({</span>
+</span></span><span style="display:flex;"><span>       ensure_installed <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#e6db74">&#34;markdown&#34;</span>, <span style="color:#e6db74">&#34;markdown_inline&#34;</span> <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>       highlight <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> enable <span style="color:#f92672">=</span> true <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>       indent <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> enable <span style="color:#f92672">=</span> true <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">})</span>
+</span></span><span style="display:flex;"><span>     -- Configuración adicional dentro del plugin
+</span></span><span style="display:flex;"><span>     vim.g.markdown_fenced_languages <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> <span style="color:#e6db74">&#39;lua&#39;</span>, <span style="color:#e6db74">&#39;python&#39;</span>, <span style="color:#e6db74">&#39;javascript&#39;</span>, <span style="color:#e6db74">&#39;html&#39;</span>, <span style="color:#e6db74">&#39;bash&#39;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>   end
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-- Autocomando fuera del setup
+</span></span><span style="display:flex;"><span>vim.api.nvim_create_autocmd<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;FileType&#34;</span>, <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span> pattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span> callback <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>   vim.opt_local.spell <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>   vim.opt_local.spelllang <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ca&#34;</span>
+</span></span><span style="display:flex;"><span> end
+</span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
+</span></span></code></pre></div></blockquote>
+<h2 id="un-exemple-de-la-potència-de-nvim-insertar-un-caràcter-a-linici-de-varies-línies">Un exemple de la potència de nvim. Insertar un caràcter a l&rsquo;inici de varies línies.</h2>
+<p>Vaig aprofitant per anar anotant els meus avenços en vim. Com està veient, estic incorporant al text moltes entrades de codi, com a exemples de configuració. Això exigeix crear els anomenats &ldquo;blockquote&rdquo; on cada línia ha de començar pel símbol &gt;. Aquí és on destaca la potència de vim, ja que aquest procés es pot automatitzar. Hi ha varies maneres de fer-ho:</p>
+<h3 id="usar-el-mode-visual-en-bloc-recomanat-per-a-seleccions-específiques">Usar el &ldquo;mode visual en bloc (recomanat per a seleccions específiques).</h3>
+<ol>
+<li>Prem <code>Esc</code> per assegurar-te estar en mode normal.</li>
+<li>Mou el cursor a la primera línia on vulguis inserir el caràcter.</li>
+<li>Pressiona <code>ctrl+v</code> per entrar en mode &ldquo;visual bloc&rdquo;.</li>
+<li>Selecciona la resta de línies verticalment usant <code>j</code> o les fletxes.</li>
+<li>Pressiona <code>I</code> (i majúscula) per entrar en mode inserció a l&rsquo;inici de les línies seleccionades.</li>
+<li>Escriu el caràcter que vulguis inserir (per exemple &gt;).</li>
+<li>Pressiona <code>Esc</code>i el caràcter s&rsquo;insertarà a totes les línies seleccionades.</li>
+</ol>
+<h3 id="métode-global-ideal-per-tot-el-text-o-rangs">Métode global. (Ideal per tot el text o rangs).</h3>
+<p>Utilitza el comandament <code>:s</code>(substituir) amb un rang.</p>
+<h4 id="inserir--a-linici-de-totes-les-línies-de-larxiu">Inserir &gt; a l&rsquo;inici de totes les línies de l&rsquo;arxiu:</h4>
+<blockquote>
+<p>:%s/^/&gt;/</p>
+</blockquote>
+<h4 id="inserir--sols-en-un-rang-ex-línies-5-a-10">Inserir &gt; sols en un rang (ex. línies 5 a 10):</h4>
+<blockquote>
+<p>:5,10s/^/&gt;/</p>
+</blockquote>
+<ul>
+<li>% = tot l&rsquo;arxiu.</li>
+<li>^ = inici de lìnia.</li>
+<li>&gt; = caràcter a inserir.</li>
+</ul>
+<h3 id="usar-norm-en-combinació-amb-comandaments">Usar :norm en combinació amb comandaments.</h3>
+<blockquote>
+<p><code>:%norm I&gt;</code></p>
+</blockquote>
+<ul>
+<li><code>%norm</code> = aplica el següent comandament, en mode normal, a cada línia.</li>
+<li><code>I&gt;</code> = insereix &gt; a l&rsquo;inici de cada línia.</li>
+</ul>
+<p>També pots seleccionar un rang visualment i després posar <code>:norm I&gt;</code>.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2025 amunt13.
+        
+    </small>
+</footer><a href="#" title="" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/Bloc-Hugo/js/main.js" ></script>
+
+    
+
+</body>
+</html>

@@ -2,31 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/nvimbasicmd/</loc>
-    <lastmod>2025-11-10T06:08:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/Bloc-Hugo/</loc>
-    <lastmod>2025-11-10T06:08:21+01:00</lastmod>
+    <lastmod>2025-11-13T09:29:28+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Bloc-Hugo/posts/</loc>
+    <lastmod>2025-11-13T09:29:28+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/07.ventoy/</loc>
+    <lastmod>2025-11-13T09:29:28+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/06.nvim/</loc>
     <lastmod>2025-11-10T06:08:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/homelab/</loc>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/04.homelab/</loc>
     <lastmod>2025-11-05T16:57:03+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/desplegament/</loc>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/05.desplegament/</loc>
     <lastmod>2025-11-05T08:57:43+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/swap/</loc>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/03.swap/</loc>
     <lastmod>2025-11-04T07:06:43+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/markdown/</loc>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/02.markdown/</loc>
     <lastmod>2025-10-31T09:44:51+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Bloc-Hugo/about/</loc>
     <lastmod>2025-10-30T18:04:54+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Bloc-Hugo/posts/elmeuprimer/</loc>
+    <loc>http://localhost:1313/Bloc-Hugo/posts/01.hugoinstall/</loc>
     <lastmod>2025-10-30T10:05:25+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Bloc-Hugo/categories/</loc>
