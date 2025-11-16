@@ -53,7 +53,7 @@
         },
         "datePublished": "2025-11-04",
         "description": "",
-        "wordCount":  423 ,
+        "wordCount":  712 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-11-04",
         "image": {
@@ -74,8 +74,8 @@
     <meta property="og:url" content="http://localhost:1313/Bloc-Hugo/posts/03.swap/">
   <meta property="og:site_name" content="Linux, BSD i altres herbes">
   <meta property="og:title" content="Swap">
-  <meta property="og:description" content="Això és una reflexió sobre la Swap surgida com a consequència de l’encriptació que vaig fer d’un ordinador portàtil.
-El problema pràctic al que t’enfrontes amb l’encriptació és el d’haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t’acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d’un esquema /boot, / i swap. /boot no pot anar encriptada a l’arrencada i, a més a més, mai té contingut sensible.">
+  <meta property="og:description" content="Això és una reflexió sobre la Swap sorgida com a conseqüència del xifrat que vaig fer d’un ordinador portàtil.
+En aquestes circumstàcies has de posar la contrasenya tantes vegades com particions xifris. I això no és còmode. El primer que se t’acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d’un esquema /boot, / i swap. /boot no pot anar encriptada a l’arrencada. / és l’objecte de l’encriptació.">
   <meta property="og:locale" content="ca">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -87,8 +87,8 @@ El problema pràctic al que t’enfrontes amb l’encriptació és el d’haver 
     
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Swap">
-  <meta name="twitter:description" content="Això és una reflexió sobre la Swap surgida com a consequència de l’encriptació que vaig fer d’un ordinador portàtil.
-El problema pràctic al que t’enfrontes amb l’encriptació és el d’haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t’acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d’un esquema /boot, / i swap. /boot no pot anar encriptada a l’arrencada i, a més a més, mai té contingut sensible.">
+  <meta name="twitter:description" content="Això és una reflexió sobre la Swap sorgida com a conseqüència del xifrat que vaig fer d’un ordinador portàtil.
+En aquestes circumstàcies has de posar la contrasenya tantes vegades com particions xifris. I això no és còmode. El primer que se t’acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d’un esquema /boot, / i swap. /boot no pot anar encriptada a l’arrencada. / és l’objecte de l’encriptació.">
 
 
     
@@ -117,7 +117,23 @@ El problema pràctic al que t’enfrontes amb l’encriptació és el d’haver 
     
     <link rel="icon" type="image/svg+xml" href="/Bloc-Hugo/icons/favicon.svg">
 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" crossorigin="anonymous" />
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA=="
+    crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg==" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+
     
 </head>
 <body data-theme = "" class="notransition">
@@ -202,18 +218,18 @@ stroke-linejoin="round" class="feather feather-home">
         <summary><b>Índex de continguts</b></summary>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#una-solució-dencriptació-automàtica-de-la-swap-a-freebsd">Una solució d&rsquo;encriptació automàtica de la swap a FreeBSD.</a></li>
+    <li><a href="#una-solució-xifrat-automàtic-de-la-swap">Una solució: xifrat automàtic de la swap.</a></li>
+    <li><a href="#no-crear-partició-swap">No crear partició swap.</a></li>
+    <li><a href="#reflexió-final-sobre-la-swap">Reflexió final sobre la swap:</a></li>
   </ul>
 </nav>
     </details>
             <div class="page-content">
-                <p>Això és una reflexió sobre la Swap surgida com a consequència de l&rsquo;encriptació que vaig fer d&rsquo;un ordinador portàtil.</p>
-<p>El problema pràctic al que t&rsquo;enfrontes amb l&rsquo;encriptació és el d&rsquo;haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t&rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&rsquo;arrencada i, a més a més, mai té contingut sensible. / és l&rsquo;objecte de l&rsquo;encriptació. Swap és el tema que ens ocupa.</p>
-<p>La swap pot tenir contingut sensible i per aquest motiu es recomana encriptar-la. Tenim així la necessitat de posar dues contrassenyes. Tampoc és massa greu.</p>
-<p>Una altra alternativa és suprimir la partició swap (si no necessites hivernació) o &ldquo;emular-la&rdquo; a través d&rsquo;un fitxer. És cridanera la solució adoptada per Fedora, realment eficient, de crear una ram comprimida (zram). Aquesta darrera solució amplia la ram disponible, comprimint-la, a costa d&rsquo;un lleuger treball afegit de la cpu. He de dir que funciona molt bé fins hi tot en sistemes de pocs recursos. Però no hi ha swap, a no ser que també en creis una. Però llavors tornem a necessitar una altra contrassenya.</p>
-<p>Quan revises la proposta que aporta FreeBSD, entens el sentit del problema. FreeBSD està enfocat a l&rsquo;estabilitat. Assumeixen què el desbordament de la ram sempre pot passar i consideren que no hi ha cap motiu rellevant per a suprimir la swap. Si el problema és l&rsquo;encriptat i la contrassenya de la partició d&rsquo;intercanvi, doncs això té solució.</p>
-<h2 id="una-solució-dencriptació-automàtica-de-la-swap-a-freebsd">Una solució d&rsquo;encriptació automàtica de la swap a FreeBSD.</h2>
-<p>Es tracta de dit-li al sistema que l&rsquo;encripti a l&rsquo;arrencada amb Geli. Per fer-ho fes el següent:</p>
+                <p>Això és una reflexió sobre la Swap sorgida com a conseqüència del xifrat que vaig fer d&rsquo;un ordinador portàtil.</p>
+<p>En aquestes circumstàcies has de posar la contrasenya tantes vegades com particions xifris. I això no és còmode. El primer que se t&rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&rsquo;arrencada. / és l&rsquo;objecte de l&rsquo;encriptació. Swap és el tema què ens ocupa, ja que pot contenir informació sensible.</p>
+<p>Així que el tema és com evitar de posar la contrasenya dues vegades, per a la partició arrel i per a la swap. He de dir que he trobat dues solucions. Fer un xifrat automàtic de la ram i l&rsquo;altra, eliminar-la.</p>
+<h2 id="una-solució-xifrat-automàtic-de-la-swap">Una solució: xifrat automàtic de la swap.</h2>
+<p>Aquesta solució me la va donar la IA quan estava instal·lant FreeBSD a un portàtil. Es tracta de dir-li al sistema que xifrii la swap a l&rsquo;arrencada amb Geli. Per fer-ho fes el següent:</p>
 <ol>
 <li>
 <p>Desactiva la wap <code>swapoff -a</code>.</p>
@@ -235,8 +251,28 @@ stroke-linejoin="round" class="feather feather-home">
 </li>
 </ol>
 <p>D&rsquo;aquesta manera la swap quedarà encriptada i no necessitaras introduïr cap altra contrassenya. Pots verificar l&rsquo;estat de la swap amb l&rsquo;ordre <code>swapinfo</code>. Si tot és correcte, la sortida tindrà un sufix <code>.eli</code>com per exemple <code>/dev/ada0p4.eli</code>.</p>
-<h1 id="i-a-linux">I a Linux?</h1>
-<p>Doncs sí, a Linux també es pot fer, però amb eines diferents. Debian i Ubuntu sembla que ho duen incorporat.</p>
+<p>Sembla que a Linux també es pot fer, però amb eines diferents. He llegit que  Debian i Ubuntu ho duen incorporat, però jo no he vist com fer-ho.</p>
+<h2 id="no-crear-partició-swap">No crear partició swap.</h2>
+<p>Pel què he llegit això es pot aconseguir de dues maneres, enviant la swap a un fitxer o creant la zram. Ara parlaré de la zram.</p>
+<p>És la solució que aporta Fedora per defecte en la instal·lació de la versió workstation, que és la que vaig provar. Suprimeix la ram perquè n&rsquo;amplia la física existent en base a un procés de compressió. Es pot usar sense swap o també amb ella creant un sistema mixt. És evident que si vols evitar el posar la contrasenya per a la swap, el correcte és eliminar-la.</p>
+<p>És una tecnologia antiga I molt eficient. La zram comprimeix la ram de forma dinàmica a costa de l&rsquo;ús de la CPU. La pèrdua de rendiment per aquest motiu és molt menor que la que provoquen les lectures- escriptures a la swap física. El fet que sigui una eina dinàmica vol dir que realment l’us de la zram s’inicia pràcticament en el mateix moment en el què es faria ús de la swap física. Es a dir, realment l’aplicació de la zram no redueix la ram física disponible, encara que en tingui una part reservada. Quan es necessita la paginació, s’activa la zram i sempre de forma prioritaria davant la possible existència de partició swap.
+Es una solució molt bona per evitar la necessitat de tenir swap (sistemes live o evitar xifrar la swap). També és una estratègia de mantenir un bon rendiment del PC en situacions de molta demanda de ram i d’evitar escriptures al disc que danyen les ssd.
+Es molt fàcil d’habilitar:</p>
+<p><code>sudo apt install zram-tools</code></p>
+<p><code>echo -e &quot;ALGO=zstd\nPERCENT=60&quot; | sudo tee -a /etc/default/zramswap</code></p>
+<p>(això modifica la configuració per defecte, indicant el tipus de compresió, zstd -la mes eficient-, i percentatge de la ram total disponible per la zram).</p>
+<p><code>sudo service zramswap reload</code></p>
+<p><code>sudo swapon –show</code> (Per veure com esta la swap).</p>
+<h2 id="reflexió-final-sobre-la-swap">Reflexió final sobre la swap:</h2>
+<p>Deixant clar que no estem parlant d&rsquo;ordinadors amb un ús crític i que la memòria ram no és cara, puc fer la següent reflexió:</p>
+<ol>
+<li>
+<p>Si necessites hivernar el PC, crea una partició swap. Les recomanacions van des del mateix tamany de la ram, fins al doble. Per a màquines amb quantitats considerables de ram, les actuals, Fedora recomana un tamany $ x + \sqrt{x} $, essent $ x $ el tamany de la ram física.</p>
+</li>
+<li>
+<p>En cas contrari, evita la partició swap i crea zram,especialment en ordinadors portàtils xifrats.</p>
+</li>
+</ol>
 
             </div>
         </article></main>

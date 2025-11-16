@@ -60,8 +60,8 @@ Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i
       
       <guid>http://localhost:1313/Bloc-Hugo/posts/03.swap/</guid>
       
-      <description>Això és una reflexió sobre la Swap surgida com a consequència de l&amp;rsquo;encriptació que vaig fer d&amp;rsquo;un ordinador portàtil.
-El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació és el d&amp;rsquo;haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada i, a més a més, mai té contingut sensible.</description>
+      <description>Això és una reflexió sobre la Swap sorgida com a conseqüència del xifrat que vaig fer d&amp;rsquo;un ordinador portàtil.
+En aquestes circumstàcies has de posar la contrasenya tantes vegades com particions xifris. I això no és còmode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada. / és l&amp;rsquo;objecte de l&amp;rsquo;encriptació.</description>
       
     </item>
     
@@ -87,9 +87,10 @@ El fet de posar &amp;ldquo;bash&amp;rdquo; arrodoneix el resultat, incorporant-h
       
       <guid>http://localhost:1313/Bloc-Hugo/about/</guid>
       
-      <description>Usuari de Linux.
-Vaig començar amb aquest sistema operatiu a les acaballes del segle XX. Recorde el meu primer intent amb Debian Woody, sense èxit. Al voltant del 2007-2008 vaig abandonar definitivament Windows per Ubuntu.
-Aviat vaig apostar per les llibreies gtk. És a dir, mai he estat molt amic de KDE. Primer Gnome2. Després Mate i Openbox. Des de fa un parell d&amp;rsquo;anys he tornat a Gnome, ara el Shell.</description>
+      <description>Vell usuari de Linux.
+Cansat de les actualitzacions amb reinici, a l&amp;rsquo;estil Windows. No m&amp;rsquo;agraden les paqueteries universals. M&amp;rsquo;agrada que em deixin estar, que no em venguin amb novetats i amb canvis innecessaris.
+He provat FreeBSD i m&amp;rsquo;ha cridat l&amp;rsquo;atenció. Però encara no sé si podria satisfer les meves necessitats com a màquina d&amp;rsquo;escritori principal.
+Estic acostumat a les llibreries GTK i he evolucionat a l&amp;rsquo;ús prioritari del teclat.</description>
       
     </item>
     

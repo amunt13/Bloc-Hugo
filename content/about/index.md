@@ -3,10 +3,10 @@ title = 'About'
 date = 2025-10-30T18:04:54+01:00
 draft = false
 +++
-Usuari de Linux.
+Vell usuari de Linux.
 
-Vaig començar amb aquest sistema operatiu a les acaballes del segle XX. Recorde el meu primer intent amb Debian Woody, sense èxit. Al voltant del 2007-2008 vaig abandonar definitivament Windows per Ubuntu.
+Cansat de les actualitzacions amb reinici, a l'estil Windows. No m'agraden les paqueteries universals. M'agrada que em deixin estar, que no em venguin amb novetats i amb canvis innecessaris. 
 
-Aviat vaig apostar per les llibreies gtk. És a dir, mai he estat molt amic de KDE. Primer Gnome2. Després Mate i Openbox. Des de fa un parell d'anys he tornat a Gnome, ara el Shell.
+He provat FreeBSD i m'ha cridat l'atenció. Però encara no sé si podria satisfer les meves necessitats com a màquina d'escritori principal.
 
-Linux, per la seva filosofia, és un sistema molt viu i sotmés a molts de canvis. Systemd, paqueteries universals, reubicacions de sistemes de fitxers, canvis als sources.list, etc. Cercant per la web em vaig trobar amb FreeBSD. Aporta més continuitat i també sembla que afegeix un plus de seguretat i estabilitat. És interessant, malgrat el seu deficient suport de maquinari.
+Estic acostumat a les llibreries GTK i he evolucionat a l'ús prioritari del teclat. 

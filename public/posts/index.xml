@@ -60,8 +60,8 @@ Els principis són simples: crees una carpeta amb el projecte (bloc) al teu PC i
       
       <guid>http://localhost:1313/Bloc-Hugo/posts/03.swap/</guid>
       
-      <description>Això és una reflexió sobre la Swap surgida com a consequència de l&amp;rsquo;encriptació que vaig fer d&amp;rsquo;un ordinador portàtil.
-El problema pràctic al que t&amp;rsquo;enfrontes amb l&amp;rsquo;encriptació és el d&amp;rsquo;haver de posar la contrassenya tantes vegades com particions encriptis. I això no és cómode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada i, a més a més, mai té contingut sensible.</description>
+      <description>Això és una reflexió sobre la Swap sorgida com a conseqüència del xifrat que vaig fer d&amp;rsquo;un ordinador portàtil.
+En aquestes circumstàcies has de posar la contrasenya tantes vegades com particions xifris. I això no és còmode. El primer que se t&amp;rsquo;acudeix és agrupar-ho tot a la partició arrel. És a dir, parteixes d&amp;rsquo;un esquema /boot, / i swap. /boot no pot anar encriptada a l&amp;rsquo;arrencada. / és l&amp;rsquo;objecte de l&amp;rsquo;encriptació.</description>
       
     </item>
     
